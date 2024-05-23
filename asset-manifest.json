@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/miner-app/static/css/main.5a14e448.css",
+    "main.js": "/miner-app/static/js/main.8006f5d0.js",
+    "static/media/Background.png": "/miner-app/static/media/Background.fdfb182c8747d57c9ac3.png",
+    "static/media/lato-v17-latin-700.ttf": "/miner-app/static/media/lato-v17-latin-700.96fd01fcb8338aa6ee2c.ttf",
+    "static/media/poppins-v15-latin-regular.ttf": "/miner-app/static/media/poppins-v15-latin-regular.b739ab04747cf8e3325a.ttf",
+    "static/media/logo.svg": "/miner-app/static/media/logo.b926a0fc0f7d0ae30b9692a294f1dc23.svg",
+    "index.html": "/miner-app/index.html",
+    "main.5a14e448.css.map": "/miner-app/static/css/main.5a14e448.css.map",
+    "main.8006f5d0.js.map": "/miner-app/static/js/main.8006f5d0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a14e448.css",
+    "static/js/main.8006f5d0.js"
+  ]
+}
