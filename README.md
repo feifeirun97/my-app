@@ -8,7 +8,7 @@ A simple mining application using React, TypeScript, SCSS, and Ant Design.
 
 Sorry no time for step2's create miner part [only fake form submit] and step3.
 
-![image-20240523172325066](/Users/xufei/Library/Application Support/typora-user-images/image-20240523172325066.png)
+<img width="1792" alt="image" src="https://github.com/feifeirun97/my-app/assets/61611167/aa5deb3e-b44c-4014-91eb-2199d7be02f0">
 
 ### `Quick start`
 
@@ -19,7 +19,7 @@ npm start
 
 ### `Structure`
 
-```json
+```txt
 ├── README.md
 ├── public
 │   ├── index.html
