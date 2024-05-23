@@ -1,9 +1,9 @@
 import React, { useContext, useState } from 'react';
 import { Table } from 'antd';
-import type { TableColumnsType, TableProps } from 'antd';
+import type { TableColumnsType } from 'antd';
 import ADD from '../../../assets/imgs/add-miner.png'
 import { Context } from '../index';
-import { CommontableProps, ContextData } from '../type';
+import { CommontableProps } from '../type';
 import styles from './index.module.scss'
 import MinerModal from './MinerModal';
 import moment from 'moment';

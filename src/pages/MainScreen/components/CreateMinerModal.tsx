@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { Button, Col, Form, FormInstance, FormProps, Input, Modal, Row, Select, Skeleton, TableColumnsType } from 'antd';
+import React, { useState } from 'react';
+import { Button, Col, Form, FormInstance, FormProps, Input, InputNumber, Modal, Row, Select, message, } from 'antd';
 import { MinerModalProps } from '../type';
 import styles from './index.module.scss'
-import CommonTable from './CommonTable';
-import { fetchCreateMiner, fetchGetMinerHistory } from '../../../services/mainscreen';
+import { fetchCreateMiner } from '../../../services/mainscreen';
 
 
 const CreateMinerModal = (props: MinerModalProps) => {
@@ -17,12 +16,15 @@ const CreateMinerModal = (props: MinerModalProps) => {
     onModalChange(false);
   };
 
-  const createMiner = async (id: string) => {
+  const createMiner = async () => {
     try {
       setLoading(true);
       const formdata = await formRef.current?.getFieldsValue()
-      const res = await fetchCreateMiner(formdata);
-
+      //TODO: fetch api
+      // const res = await fetchCreateMiner(formdata);
+      message.info('Sorry, there was no time to implement the actual creation.');
+      message.success('create success');
+      onModalChange(false)
     } catch (e) {
       console.log('err: ', e);
     } finally {
@@ -79,16 +81,16 @@ const CreateMinerModal = (props: MinerModalProps) => {
             <Select
               options={[
                 {
-                  value: 'jack',
-                  label: 'Jack',
+                  value: 'Pl1',
+                  label: 'Pl1',
                 },
                 {
-                  value: 'lucy',
-                  label: 'Lucy',
+                  value: 'Pl2',
+                  label: 'Pl2',
                 },
                 {
-                  value: 'tom',
-                  label: 'Tom',
+                  value: 'Pl3',
+                  label: 'Pl3',
                 },
               ]} />
           </Form.Item>
@@ -101,7 +103,7 @@ const CreateMinerModal = (props: MinerModalProps) => {
                 name="carryCapacity"
                 rules={[{ required: true, message: 'Please input your carryCapacity!' }]}
               >
-                <Input />
+                <InputNumber min={0} max={200} />
               </Form.Item>
 
             </Col>
@@ -111,7 +113,7 @@ const CreateMinerModal = (props: MinerModalProps) => {
                 name="travelSpeed"
                 rules={[{ required: true, message: 'Please input your travelSpeed!' }]}
               >
-                <Input />
+                <InputNumber min={0} max={200} />
               </Form.Item>
 
             </Col>
@@ -121,7 +123,7 @@ const CreateMinerModal = (props: MinerModalProps) => {
                 name="miningSpeed"
                 rules={[{ required: true, message: 'Please input your miningSpeed!' }]}
               >
-                <Input />
+                <InputNumber min={0} max={200} />
               </Form.Item>
 
             </Col>
@@ -129,7 +131,7 @@ const CreateMinerModal = (props: MinerModalProps) => {
           </Row>
 
           <div className={styles.btnWrapper}>
-            <Button type="primary" htmlType="submit" className={styles.btn}>
+            <Button type="primary" htmlType="submit" className={styles.btn} onClick={createMiner}>
               Submit
             </Button>
           </div>

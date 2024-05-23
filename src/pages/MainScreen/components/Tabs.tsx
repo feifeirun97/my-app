@@ -1,9 +1,6 @@
-import React, { ReactElement, useState } from 'react';
+import React, { useState } from 'react';
 import { Tabs } from 'antd';
 import type { TabsProps } from 'antd';
-import MINER from '../../../assets/imgs/miner.png'
-import ASTEROID from '../../../assets/imgs/asteroid.png'
-import PLANET from '../../../assets/imgs/planet.png'
 import styles from './index.module.scss'
 import classNames from 'classnames';
 import CommonTable from './CommonTable';

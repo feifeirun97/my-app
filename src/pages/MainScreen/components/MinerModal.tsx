@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Modal, Skeleton, TableColumnsType } from 'antd';
+import { Modal } from 'antd';
 import { MinerModalProps } from '../type';
 import styles from './index.module.scss'
 import CommonTable from './CommonTable';
